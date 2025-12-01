@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Market Appraisal | Sydney Assets Real Estate</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="logo-container">
+      <div class="logo-box">
+        <img src="images/logo.jpg" alt="Website Logo" class="logo" />
+      </div>
+      <p class="tagline">Sydney Real Estate Agent for Residential and Commercial Sales and Rentals</p>
+    </div>
+    
+    <nav class="nav">
+      <a href="website.html">Home</a>
+      <a href="buying.html">Buying</a>
+      <a href="selling.html" class="active">Selling</a>
+      <a href="renting.html">Renting</a>
+      <a href="agents.html">Agents</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="tel:0292839800" class="nav-phone">02-9283-9800</a>
+    </nav>
+  </header>
+
+  <!-- Market Appraisal Form -->
+  <section class="container">
+    <div class="page-card">
+      <div class="page-card-header">
+        <h1>Market Appraisal</h1>
+      </div>
+
+      <div class="page-card-body">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- REQUIRED Web3Forms Key -->
+          <input type="hidden" name="access_key" value="311bce49-d375-417e-beab-155a4b2aaeca" />
+          <input type="hidden" name="subject" value="New Market Appraisal Request" />
+          <input type="hidden" name="from_name" value="Sydney Assets Website" />
+          <input type="hidden" name="redirect" value="thank-you.html" />
+          <input type="checkbox" name="botcheck" style="display:none !important" tabindex="-1" autocomplete="off" />
+
+          <!-- Title -->
+          <div class="form-group">
+            <label for="title">Title <span class="required">*</span></label>
+            <select id="title" name="Title" required>
+              <option value="">Select</option>
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+              <option>Dr</option>
+            </select>
+          </div>
+
+          <!-- First & Last Name -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="fname">First Name <span class="required">*</span></label>
+              <input type="text" id="fname" name="First Name" required />
+            </div>
+            <div class="form-group col-6">
+              <label for="lname">Last Name <span class="required">*</span></label>
+              <input type="text" id="lname" name="Last Name" required />
+            </div>
+          </div>
+
+          <!-- Contact Numbers -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="mobile">Mobile Number <span class="required">*</span></label>
+              <input type="tel" id="mobile" name="Mobile" required />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="Email" required />
+          </div>
+
+          <!-- Address Fields -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="unit">Unit / Street Number <span class="required">*</span></label>
+              <input type="text" id="unit" name="Unit / Street Number" required />
+            </div>
+            <div class="form-group col-6">
+              <label for="street">Street Name <span class="required">*</span></label>
+              <input type="text" id="street" name="Street Name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="suburb">Suburb <span class="required">*</span></label>
+              <input type="text" id="suburb" name="Suburb" required />
+            </div>
+            <div class="form-group col-6">
+              <label for="state">State</label>
+              <select id="state" name="State">
+                <option>NSW</option>
+                <option>VIC</option>
+                <option>QLD</option>
+                <option>WA</option>
+                <option>SA</option>
+                <option>TAS</option>
+                <option>ACT</option>
+                <option>NT</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Property Details -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="ptype">Property Type</label>
+              <select id="ptype" name="Property Type">
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Townhouse</option>
+                <option>Unit</option>
+                <option>Commercial</option>
+              </select>
+            </div>
+            <div class="form-group col-6">
+              <label for="pstatus">Property Status</label>
+              <select id="pstatus" name="Property Status">
+                <option>Vacant</option>
+                <option>Owner Occupied</option>
+                <option>Tenanted</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="age">Age of Property</label>
+              <input type="text" id="age" name="Age of Property" placeholder="e.g. 1 - 5 years" />
+            </div>
+            <div class="form-group col-6">
+              <label for="ctype">Construction Type</label>
+              <input type="text" id="ctype" name="Construction Type" placeholder="e.g. Brick" />
+            </div>
+          </div>
+
+          <!-- Bedrooms, Bathrooms, Living Areas -->
+          <div class="form-row">
+            <div class="form-group col-4">
+              <label for="bedrooms">No. of Bedrooms</label>
+              <input type="number" id="bedrooms" name="Bedrooms" min="0" />
+            </div>
+            <div class="form-group col-4">
+              <label for="bathrooms">No. of Bathrooms</label>
+              <input type="number" id="bathrooms" name="Bathrooms" min="0" />
+            </div>
+            <div class="form-group col-4">
+              <label for="living">Living Areas</label>
+              <input type="number" id="living" name="Living Areas" min="0" />
+            </div>
+          </div>
+
+          <!-- Outdoor Living -->
+          <div class="form-group">
+            <label for="outdoor">Outdoor Living</label>
+            <select id="outdoor" name="Outdoor Living">
+              <option>None</option>
+              <option>Balcony</option>
+              <option>Courtyard</option>
+              <option>Garden</option>
+            </select>
+          </div>
+
+          <!-- Additional Features -->
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="parking">Parking</label>
+              <input type="text" id="parking" name="Parking" placeholder="e.g. Garage, Carport" />
+            </div>
+            <div class="form-group col-6">
+              <label for="aircon">Air Conditioning</label>
+              <select id="aircon" name="Air Conditioning">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="pool">Pool</label>
+              <select id="pool" name="Pool">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-6">
+              <label for="reno">Property Renovated</label>
+              <select id="reno" name="Property Renovated">
+                <option>No, it is a new property</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Features -->
+          <div class="form-group">
+            <label for="features">Additional Features</label>
+            <textarea id="features" name="Additional Features" rows="3"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="search-btn" type="submit">Request Appraisal</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

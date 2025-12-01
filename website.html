@@ -1,0 +1,150 @@
+<!-- File: website.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="logo-container">
+      <div class="logo-box">
+        <img src="images/logo.jpg" alt="Website Logo" class="logo" />
+      </div>
+      <p class="tagline">Sydney Real Estate Agent for Residential and Commercial Sales and Rentals</p>
+    </div>
+    
+    <nav class="nav">
+      <a href="/website.html" class="active">Home</a>
+      <a href="buying.html">Buying</a>
+      <a href="selling.html">Selling</a>
+      <a href="renting.html">Renting</a>
+      <a href="agents.html">Agents</a>
+      <a href="contact.html">Contact us</a>
+      <a href="tel:0292839800" class="nav-phone">02-9283-9800</a>
+    </nav>
+  </header>
+
+  <!-- Filter Card -->
+  <section class="filter">
+    <div class="container">
+      <div class="filter__title">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="8" stroke="currentColor" fill="none"></circle>
+          <line x1="21" y1="21" x2="16.5" y2="16.5" stroke="currentColor"></line>
+        </svg>
+        Find Your Home
+      </div>
+
+      <div class="filter__body">
+        <form class="search-form" action="#" method="get">
+          <div class="fields">
+            <!-- Row 1 -->
+            <div class="control col-3">
+              <label for="kw">Keyword</label>
+              <input id="kw" name="q" type="text" placeholder="Any" />
+            </div>
+
+            <div class="control col-3">
+              <label for="loc">Main Location</label>
+              <select id="loc" name="location">
+                <option value="">Any</option>
+                <option>Sydney</option>
+                <option>Bondi</option>
+                <option>Parramatta</option>
+                <option>North Sydney</option>
+              </select>
+            </div>
+
+            <div class="control col-3">
+              <label for="status">Property Status</label>
+              <select id="status" name="status">
+                <option value="">Any</option>
+                <option>For Sale</option>
+                <option>For Rent</option>
+                <option>Sold</option>
+              </select>
+            </div>
+
+            <div class="control col-3">
+              <label for="type">Property Type</label>
+              <select id="type" name="type">
+                <option value="">Any</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Townhouse</option>
+                <option>Commercial</option>
+                <option>Unit</option>
+                <option>Office</option>
+                <option>Villa</option>
+              </select>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="control col-2">
+              <label for="beds">Min Beds</label>
+              <select id="beds" name="min_beds">
+                <option value="">Any</option>
+                <option>1</option><option>2</option><option>3</option><option>4+</option>
+              </select>
+            </div>
+
+            <div class="control col-2">
+              <label for="baths">Min Baths</label>
+              <select id="baths" name="min_baths">
+                <option value="">Any</option>
+                <option>1</option><option>2</option><option>3+</option>
+              </select>
+            </div>
+
+            <!-- Min Price -->
+            <div class="control col-2">
+              <label for="minprice">Min Price</label>
+              <div class="currency">
+                <span class="currency__prefix">$</span>
+                <input id="minprice" name="min_price" type="number"
+                       inputmode="numeric" min="0" step="10000" placeholder="Any" />
+              </div>
+            </div>
+
+            <!-- Max Price -->
+            <div class="control col-2">
+              <label for="maxprice">Max Price</label>
+              <div class="currency">
+                <span class="currency__prefix">$</span>
+                <input id="maxprice" name="max_price" type="number"
+                       inputmode="numeric" min="0" step="10000" placeholder="Any" />
+              </div>
+            </div>
+
+            <div class="control col-2">
+              <label for="minarea">Min Area (m²)</label>
+              <input id="minarea" name="min_area" type="number" placeholder="Any" />
+            </div>
+
+            <div class="control col-2">
+              <label for="maxarea">Max Area (m²)</label>
+              <input id="maxarea" name="max_area" type="number" placeholder="Any" />
+            </div>
+
+            <div class="col-2 btn-cell">
+              <button class="search-btn" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results render here -->
+  <section class="container">
+    <section id="results" class="results"></section>
+  </section>
+
+</body>
+</html>

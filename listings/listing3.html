@@ -1,0 +1,200 @@
+<!-- File: listings/listing3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>1901/91 Liverpool St, Sydney NSW 2000 | Sydney Assets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="../">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/property.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="logo-container">
+      <div class="logo-box"><img src="images/logo.jpg" alt="Website Logo" class="logo" /></div>
+      <p class="tagline">Sydney Real Estate Agent for Residential and Commercial Sales and Rentals</p>
+    </div>
+    <nav class="nav">
+      <a href="/website.html">Home</a>
+      <a href="buying.html">Buying</a>
+      <a href="selling.html">Selling</a>
+      <a href="renting.html">Renting</a>
+      <a href="agents.html">Agents</a>
+      <a href="contact.html">Contact us</a>
+      <a href="tel:0292839800" class="nav-phone">02-9283-9800</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="property-hero">
+      <h1 class="property-title">1901/91 Liverpool St, Sydney NSW 2000</h1>
+      <p class="property-sub">Sydney • Apartment • For Sale</p>
+
+      <div class="hero-wrap">
+        <img id="heroImg" src="images/listing3-0.png" alt="1901/91 Liverpool St, Sydney apartment" class="hero-media" />
+        <button type="button" class="hero-arrow prev" aria-label="Previous image">‹</button>
+        <button type="button" class="hero-arrow next" aria-label="Next image">›</button>
+      </div>
+
+      <!-- Specs -->
+      <div class="specs" style="margin-top:12px;">
+        <span class="pill">Area: 62 m²</span>
+        <span class="pill">Bedrooms: 1</span>
+        <span class="pill">Bathrooms: 1</span>
+      </div>
+
+      <div class="price">A$650</div>
+    </section>
+
+    <!-- Full-width stacked sections -->
+    <section class="page-stack">
+      <section class="card-soft">
+        <h2>Overview</h2>
+
+        <p><strong>Luxurious Inner City One Bedroom Apartment + Storage</strong></p>
+
+        <p>
+          This one bedroom apartment is a rare inner city gem where you can experience the absolute convenience and 
+          prestige of this all the shops and restaurants at your door step.
+        </p>
+
+        <h3>Features include:</h3>
+        <ul class="feature-list">
+          <li>Extensive glazing throughout bedroom and living room to provide an abundance of natural light and ventilation</li>
+          <li>Bright high ceiling living/dining area leading onto outdoor terrace</li>
+          <li>Large bedroom with built-in wardrobes and balcony access</li>
+          <li>Stylish solid stone overlay benchtops with gas cooktop, rangehood with outside ducting.</li>
+          <li>Spacious luxurious tiled bathroom with shower and bath tub.</li>
+          <li>Reverse cycle ducted air conditioning and internal laundry</li>
+        </ul>
+
+        <p>
+          Live the dream with access to the finest resort-style facilities, including : On-site Manager, concierge, swimming pool, gym, sauna and spa.
+          Only steps away from an array of world-class dining options, cafes, boutique shops, Town Hall Station and Hyde Park. 
+          Moments from Darling Harbour attractions, Martin Place, Pitt Street Mall and Barangaroo.
+        </p>
+
+        <p><strong>Must Be Inspect & Won’t Last!</strong></p>
+      </section>
+
+      <section class="card-soft">
+        <h2>Features</h2>
+
+        <div class="feature-columns">
+          <ul class="feature-bullets">
+            <li>Air Conditioning</li>
+            <li>Balcony/Deck</li>
+            <li>Built in Wardrobes</li>
+            <li>Dishwasher</li>
+          </ul>
+
+          <ul class="feature-bullets">
+            <li>Gas</li>
+            <li>Gym</li>
+            <li>Intercom</li>
+          </ul>
+
+          <ul class="feature-bullets">
+            <li>Internal Laundry</li>
+            <li>Swimming Pool</li>
+            <li>Tile Flooring</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card-soft">
+        <h2>Location</h2>
+
+        <div class="map-wrap">
+          <iframe
+            class="map-embed"
+            src="https://www.google.com/maps?q=1901%2F91+Liverpool+St%2C+Sydney+NSW+2000&output=embed"
+            title="Map: 1901/91 Liverpool St, Sydney NSW 2000"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="map-actions">
+          <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&query=1901%2F91+Liverpool+St+Sydney+NSW+2000" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </section>
+
+      <!-- Enquire -->
+      <section class="card-soft enquire-card" aria-labelledby="enquire-title">
+        <div class="agent">
+          <img class="avatar" src="images/logo.jpg" alt="Agent" />
+          <div>
+            <h2 id="enquire-title" style="margin:0; font-size:16px;">Enquire</h2>
+            <div class="muted">
+              Sydney Assets Real Estate<br>
+              Suite 1210, World Tower Commercial<br>
+              87–89 Liverpool St, Sydney NSW 2000
+            </div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="phone">02 9283 9800</span>
+          <a class="btn-primary" href="contact.html">Email</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Minimal JS: arrow navigation -->
+  <script>
+    (function () {
+      const hero = document.getElementById('heroImg');
+      const prevBtn = document.querySelector('.hero-arrow.prev');
+      const nextBtn = document.querySelector('.hero-arrow.next');
+
+      // Update these to match your available images for listing 3
+      const IMAGES = [
+        'images/listing3-0.png',
+        'images/listing3-1.png',
+        'images/listing3-2.png',
+        'images/listing3-3.png',
+      ];
+
+      let i = 0;
+
+      function show(idx) {
+        if (idx < 0) idx = IMAGES.length - 1;
+        if (idx >= IMAGES.length) idx = 0;
+        i = idx;
+
+        hero.style.opacity = '0.6';
+        const img = new Image();
+        img.onload = () => {
+          hero.src = IMAGES[i];
+          hero.style.opacity = '1';
+        };
+        img.src = IMAGES[i];
+      }
+
+      prevBtn.addEventListener('click', () => show(i - 1));
+      nextBtn.addEventListener('click', () => show(i + 1));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') show(i - 1);
+        if (e.key === 'ArrowRight') show(i + 1);
+      });
+
+      // Simple swipe
+      let sx = null;
+      hero.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, {passive:true});
+      hero.addEventListener('touchend', e => {
+        if (sx == null) return;
+        const dx = e.changedTouches[0].clientX - sx;
+        if (Math.abs(dx) > 40) { dx > 0 ? show(i - 1) : show(i + 1); }
+        sx = null;
+      });
+
+      show(0);
+    })();
+  </script>
+</body>
+</html>
