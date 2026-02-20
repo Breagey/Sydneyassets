@@ -188,7 +188,7 @@ function applyFilters(items) {
   return items.filter(it => {
     if (q && !(it.title.toLowerCase().includes(q) || it.location.toLowerCase().includes(q))) return false;
 
-    if (location && it.location !== location) return false;
+    if (location && it.location.toLowerCase() !== location.toLowerCase()) return false;
     if (status   && it.status   !== status)   return false;
     if (type     && it.type     !== type)     return false;
 
