@@ -130,9 +130,8 @@
 
 // === Search & Demo Rendering ===============================================
 
-// Demo data (now includes `garages`)
 const DATA = [
-  { id:1, title:'9 Lady Penrhyn Drive, Beacon Hill NSW 2100', type:'House',     status:'For Sale', bedrooms:5, bathrooms:5, price:750000, area:500, location:'Sydney', garages:2 },
+  { id:1, title:'9 Lady Penrhyn Drive, Beacon Hill NSW 2100', type:'House',     status:'For Sale', bedrooms:5, bathrooms:5, price:750000, area:500, location:'Beacon Hill', garages:2 },
   { id:2, title:'2303a/148 Elizabeth St, Sydney, NSW, 2000',  type:'Apartment', status:'For Sale', bedrooms:2, bathrooms:2, price:1450000, area:102, location:'Sydney', garages:1 },
   { id:3, title:'1901/91 Liverpool St, Sydney NSW 2000',      type:'Apartment', status:'For Sale', bedrooms:1, bathrooms:1, price:650,    area:62,  location:'Sydney', garages:0 },
 ];
