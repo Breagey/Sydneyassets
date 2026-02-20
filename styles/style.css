@@ -163,7 +163,7 @@ body {
 
 .results .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 360px);
+  grid-template-columns: repeat(auto-fill, 340px);
   gap: 16px;
   justify-content: start;
 }
@@ -178,7 +178,7 @@ body {
 }
 
 .results .card {
-  width: 360px;
+  width: 340px;
 }
 
 .card h3 { margin: 0 0 6px; font-size: 18px; }
