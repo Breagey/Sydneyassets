@@ -481,6 +481,177 @@ body {
   font-weight: 700;
 }
 
+/* =======================
+   FORM GRID HELPERS
+======================= */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+}
+
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+/* =======================
+   BETTER TOPBAR RESPONSIVE
+======================= */
+.topbar {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-container {
+  min-width: 220px;
+}
+
+.nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* =======================
+   TABLET
+======================= */
+@media (max-width: 920px) {
+  .col-3, .col-2 { grid-column: span 6; }
+  .col-4 { grid-column: span 6; }
+  .col-6 { grid-column: span 12; }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .logo-box {
+    width: 160px;
+    height: 52px;
+  }
+
+  .page-card-body {
+    padding: 16px;
+  }
+
+  .listing-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 540px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .col-3,
+  .col-2,
+  .col-4,
+  .col-6,
+  .col-12 {
+    grid-column: span 12;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .topbar {
+    padding: 12px;
+  }
+
+  .logo-box {
+    width: 140px;
+    height: 48px;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav a,
+  .nav-phone {
+    text-align: center;
+    padding: 10px 8px;
+  }
+
+  .filter {
+    padding: 16px 0;
+  }
+
+  .filter__title {
+    font-size: 18px;
+  }
+
+  .filter__body {
+    padding: 14px;
+  }
+
+  .search-btn,
+  .btn,
+  .btn-link,
+  .btn--ghost,
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .listing-row {
+    gap: 12px;
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .listing-row__title {
+    font-size: 18px;
+  }
+
+  .listing-row__excerpt {
+    font-size: 14px;
+    -webkit-line-clamp: 4;
+  }
+
+  .listing-row__actions {
+    flex-direction: column;
+  }
+
+  .page-card-header h1 {
+    font-size: 18px;
+  }
+
+  .page-card-body h2 {
+    font-size: 17px;
+  }
+
+  .property-title {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .hero-arrow {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Responsive */
 @media (max-width: 860px) {
   .listing-row {
