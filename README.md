@@ -1,0 +1,1 @@
+Focusing on responsive layout
